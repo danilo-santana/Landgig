@@ -487,10 +487,10 @@ header{
 }
 
 .pricingbox h2{
-	padding: 10px 20px 35px 20px;
+	 padding: 10px 0px 35px 0px;
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .pricingbox p{
