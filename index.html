@@ -13,7 +13,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+
+<body id="home">
+
 
 <section class="contact-div">
 	<div class="wrapper">
@@ -38,24 +40,28 @@
 </section>
 
 <div style="width: 100%; background-color: rgb(252,252,252);">
-<header>
 
-	<a href="#" class="logo"></a>
+	<header>
 
-	<nav class="nav-logo">
-	
-		<a href="#" id="menu-hbg"></a>
+		<a href="#" id="logo"></a>
 
-		<ul class="main-menu">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Why Choose Us</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Pricing</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#" class="free-trial">Free Trial</a></li>
-		</ul>
-	</nav>
-</header>
+			<nav class="nav-logo">
+
+				<a href="#" id="menu-icon"></a>
+
+					<ul class="main-menu">
+
+						<li><a href="#home" class="current">Home</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#price">Price</a></li>
+						<li><a href="#contact">Contact</a></li>
+
+					</ul>
+
+			</nav>
+
+	</header>
 </div>
 
 <section class="discover">
@@ -81,7 +87,7 @@
 </section>
 
 
-<section class="why-landgig">
+<section class="why-landgig" id="work">
 
 	<h1>Why Landing</h1>
 
@@ -128,11 +134,7 @@
 <section class="testimonials">
 	
 	<div class="video-content">
-		<video src="mp4/highlights.mp4" controls poster="img/highlights.jpg">
-								
-			<track kind="subtitles" label="Português (Brasil)" src="vtt/legendas.vtt" srclang="pt-br" default>
-
-		</video>
+		
 	</div>
 
 	<h2>What Our Clients Say</h2>
@@ -143,16 +145,20 @@
 	
 </section>
 
-<section class="about-us">
+<section class="about-us" id="about">
 	
-	<div class="about-div"></div>
+	<div class="about-div">
+		<h2>About Us</h2>
+		<br>
+		<p>But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+	</div>
 	<div class="about-div about-pic"></div>
 
 </section>
 
-<section class="pricing-landgig">
+<section class="pricing-landgig" id="price">
 
-	<h1>Why Landing</h1>
+	<h1>Our Pricing</h1>
 
 	<div class="container">
 		
@@ -240,12 +246,58 @@
 
 </section>
 
-<section style="width: 100%; height: 300px; ">
+<section class="getintouch" id="contact">
 
+	<div class="getintouch-left">
+
+		<div class="getintouch-content">
+			<p><strong>Pityful a rethoric question ran over her she had a last</strong></p>
+		</div>
+
+		<div class="getintouch-content getspecial">
+
+			<div class="far-txt">
+				<p><strong>Far far away behind the word mountains</strong></p>
+			</div>		
+			<hr>
+			<p>Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small riamed Duden flows by their place and supplies it with the necessary fly into your mouth. Even the all-powerful Pointing has no contro</p>
+
+		</div>
+
+		<div class="getintouch-content">
+			<p><strong>The Big Oxmox advised her not to do so</strong></p>
+		</div>
+
+		<div class="getintouch-content" style="margin-bottom: 0px;">
+			<p><strong>When she reached the first hills of the Italic</strong></p>
+		</div>
+	</div>
+
+	<div class="getintouch-right">
+		<form class="form-ended">
+			<h2>Get In Touch</h2>
+			<input type="text" name="nome" placeholder="Your name">
+			<input type="text" name="nome" placeholder="Your email">
+			<textarea class="text-ended" placeholder="Your message"></textarea>
+			<button class="ended-btn">SEND</button>
+		</form>
+	</div>
 		
 </section>
 
+<footer class="footer">
+	<nav class="footer-nav">
+		<ol class="footer-list">
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Terms & Conditions</a></li>
+			<li><a href="#">Free Trial</a></li>
+		</ol>
+	</nav>
 
+	<p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2016 all rights reserved <span>Danilo Santana</span> Designed by <span>Towkir Ahmed Bappy</span></p>
+</footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="https://use.fontawesome.com/3baa7c1176.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
