@@ -14,26 +14,42 @@ body{
 
 /* -=================================================================*/
 
-header{
-	height: 100px;
-    max-width: 1150px;
+h2{
+	font-family: 'Raleway'!important;
+}
+
+p, input{
+	font-family: 'Roboto'!important;
+}
+
+button{
+	font-family: 'Raleway';
+    font-weight: 600;
+}
+
+header {
+
+	background: transparent;
+	height: 83px;
+	max-width: 1150px;
     margin: 0 auto;
 }
 
-.logo {
-	
-	margin: 20px 20px 20px 0px;
-	float: left;
-	width: 219px;
-	height: 54px;
-	background: url(../images/logo.png) no-repeat center;
-	display: block;
+#logo{
+
+	margin: 18px 18px 18px 18px;
+    float: left;
+    width: 200px;
+    height: 40px;
+    background: url(../images/logo.png) no-repeat center;
+    display: block;
+    background-size: 100% 100%;
+
 }
 
 .nav-logo{
 	float: right;
-	padding: 19px 0px 18px 20px;
-	line-height: 44px;
+	padding: 20px;
 }
 
 .free-trial{
@@ -46,11 +62,13 @@ header{
     text-decoration: none;
 }
 
-#menu-hbg{
+#menu-icon {
+
 	display: hidden;
 	width: 40px;
 	height: 40px;
-	background: url(../images/menu.png) no-repeat center;
+	background: url(../images/menu.png) center no-repeat;
+
 }
 
 .main-menu{
@@ -60,8 +78,17 @@ header{
 .main-menu li{
 	display: inline-block;
 	float: left;
-	padding: 9px 9px 9px 18px;
+	padding: 10px;
 }
+
+.main-menu li a{
+	font-family: 'Roboto'!important;
+}
+
+.main-menu li a:hover{
+	color: rgb(32,135,219);
+}
+
 
 /* -=================================================================*/
 
@@ -81,9 +108,13 @@ header{
 	margin: 0px 20px 0px 0px;
 }
 
+.socials-nav li a{
+	font-family: 'Roboto'!important;
+}
+
 
 .wrapper{
-	max-width: 1150px;
+	max-width: 1100px;
 	height: 50px;
 	line-height: 35px;
 	color: white;
@@ -131,7 +162,16 @@ header{
     display: inline-block;
     /* width: 322px; */
     border-radius: 55px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 
+}
+
+.button:hover{
+	background-color: rgb(76,76,76);
+	color: white;
 }
 /* -=================================================================*/
 
@@ -154,24 +194,24 @@ header{
     align-items: center;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-
+   	font-family: 'Raleway';
 }
 
 .touchdiv span{
 	display: block;
 	font-size: 4.4em;
-	font-family: 'Roboto';
 	font-weight: 700;
 	color: white;
 }
 
 .form-started{
 	height: 645px;
-    width: calc(29% - 20px);
+    width: calc(31% - 20px);
     background-color: white;
     padding: 35px;
     margin: 47px;
 }
+
 
 .form-started h2{
 	font-size: 4.7em;
@@ -190,19 +230,19 @@ header{
 }
 
 .join-div{
-	width: 400px;
+	width: 353px;
     margin: 0 auto;
 }
 
 .join-btn{
-	padding: 27px 110px 27px 110px;
+	padding: 27px 101px 27px 101px;
     margin: 0 auto;
     text-align: center;
     border-radius: 35px;
     border: none;
     font-family: 'Raleway';
     font-weight: 600;
-    font-size: 35px;
+    font-size: 29px;
     background-color: white;
     color: #48abfb;
     -webkit-transition:	all 0.5s linear;
@@ -404,16 +444,37 @@ header{
 
 .about-div{
 	height: 286px;
-    background-color: red;
-    object-fit: contain;
     margin: 20px;
+    padding: 20px;
     width: calc(40% - 20px);
+    display: inherit;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.about-div h2{
+	margin-right: auto;
+    font-family: 'Raleway';
+    font-size: 33px;
+    font-weight: 700;
+    color: #50ADF9;
+}
+
+.about-div p{
+	line-height: 22px;
 }
 
 .about-pic{
 	background-image: url("../images/about.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	-webkit-box-shadow: 0px 0px 7px 1px #d3d3d3;
+    -moz-box-shadow: 0px 0px 7px 1px #d3d3d3;
+    box-shadow: 0px 0px 7px 1px #d3d3d3;
 
 }
 
@@ -487,10 +548,10 @@ header{
 }
 
 .pricingbox h2{
-	 padding: 10px 0px 35px 0px;
+	padding: 10px 20px 35px 20px;
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2.5vw;
 }
 
 .pricingbox p{
@@ -536,8 +597,6 @@ header{
     text-align: center;
     border-radius: 35px;
     border: none;
-    font-family: 'Raleway';
-    font-weight: 600;
     font-size: 17px;
     background-color: white;
     color: #48abfb;
@@ -599,33 +658,215 @@ header{
     background-color: rgb(254,254,254);
     font-size: 14px;
 }
+/* ======================== Get in Touch --========================*/
+
+.getintouch{
+	width: 100%; 
+	height: auto;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 50px 20px 50px 20px;
+}
+
+.getintouch-left{
+	width: calc(40% - 20px);
+    padding: 20px 20px 20px 20px;
+	background-color: white;
+	margin-right: 20px;
+	border: 1px solid #f1f1f1;
+	padding: 20px;
+	margin: 10px 0px 10px 0px;
+}
+
+.getintouch-right{
+	width: calc(27% - 20px);
+	background-color: white;
+	margin-left: 20px;
+	border: 1px solid #f1f1f1;
+}
+
+.getintouch-content{
+	height: 63px;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+	display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: baseline;
+    -webkit-justify-content: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+}
+
+.getintouch-content strong{
+	font-weight: 500;
+}
+
+.getintouch-content hr{
+	margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.getspecial{
+	height: calc(3*80px);
+	background-color: white;
+	border: 1px solid #f1f1f1;
+}
+
+.far-txt{
+	width: 93%;
+    border-bottom: 1px solid #f1f1f1;
+    height: 55px;
+    padding: 10px;
+}
+
+.form-ended{
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.form-ended input{
+	width: 100%;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.ended-btn{
+	padding: 15px 35px 15px 35px;
+    border-radius: 35px;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 13px;
+    background-color: white;
+    color: #48abfb;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -webkit-box-shadow: 0px 0px 7px 1px #d3d3d3;
+    -moz-box-shadow: 0px 0px 7px 1px #d3d3d3;
+    box-shadow: 0px 0px 7px 1px #d3d3d3;
+	position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 40px;
+}
+
+.ended-btn:hover {
+    background-color: #48abfb;
+    color: white;
+}
+
+.form-ended h2{
+	font-size: 2.7em;
+    text-align: center;
+    margin-bottom: 38px;
+    color: rgb(32,135,219);
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+.text-ended{
+	width: 100%;
+    padding: 15px 10px 15px 10px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    height: 150px;
+    resize: none;
+
+}
+
+/* ============================ Footer ===========================*/
+
+footer{
+	background-color: rgb(26,26,26);
+	min-height: 130px;
+	width: 100%;
+	display: -webkit-flex;
+	display:         flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	padding: 20px;
+}
+
+footer p{
+	text-align: center;
+	font-size: 13px;
+    color: white;
+}
+
+footer span{
+	color: #48ABFB;
+}
+
+.footer-nav{
+	max-width: 500px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.footer-list{
+	text-align: center;
+}
+
+.footer-list li{
+	text-align: center;
+	display: inline;
+	padding: 10px;
+}
+
+.footer-list li a{
+	color: white;
+}
 
 /* -==================   Media Queries   =======================*/
 
-@media screen and (max-width: 853px){
-	.main-menu, .nav-logo:active .main-menu { 
 
+
+@media screen and (max-width: 790px){
+	.contact-div{
 		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		
-
-	}
-
-
-	#menu-hbg {
-
-		display:inline-block;
-
+		visibility: hidden;
 	}
 }
 
 @media screen and (max-width: 728px){
-	.why-landgig .container{
+
+	.pricingbox{width:calc(70% - 20px);}
+
+	.form-started{width:calc(70% - 20px);}
+
+	.pricingbox h2{
+		font-size: 2.5vw;
+	}
+
+	.getintouch-left, .getintouch-right{
+		width: calc(100% - 20px);
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+	.why-landgig .container, .getintouch{
 		 display: -webkit-flex;
 		 display:         flex;
 		 -webkit-align-items: center;
@@ -634,26 +875,6 @@ header{
 	     justify-content: center;
 	     flex-direction: column;
 	     -webkit-flex-direction: column;
-	}
-
-	.main-menu, .nav-logo:active .main-menu { 
-
-		display: none;
-		position: absolute;
-		padding: 20px;
-		background: #fff;
-		right: 20px;
-		top: 60px;
-		width: 50%;
-		
-
-	}
-
-
-	#menu-hbg {
-
-		display:inline-block;
-
 	}
 
 	.about-us{
@@ -670,7 +891,7 @@ header{
 
 	.contact-div{
 		display: none;
-		visibility: hidden;en;
+		visibility: hidden;
 	}
 
 	.discover-content, .pricing-landgig .container{
@@ -691,23 +912,8 @@ header{
 	}
 }
 
-@media only screen and (max-width : 1300px) {
-	header, .wrapper{
-		margin: 0px 20px 0px 20px;
-	}
-}
-
 @media only screen and (max-width : 640px) {
 
-	.logo {
-		margin-left: 20px;
-	}
-
-	#menu-hbg {
-		margin-right: 20px;
-	}
-
-	header, .wrapper{margin: 0px;}
 	  
 	.about-div, .video-content{width: calc(90% - 20px);}
 
@@ -720,27 +926,36 @@ header{
 	.input-email{padding: 0px 20px 0px 20px;}
 	.email-form{width: calc(90% - 20px);}
 
-	#menu-hbg {
+}
+
+@media only screen and (max-width : 640px) {
+
+	.pricingbox h2{
+		font-size: 8.5vw;
+	}
+
+	.footer-list li{
+		display: block;
+	}
+
+	#menu-icon {
 
 		display:inline-block;
 
 	}
 
-	.main-menu, .nav-logo:active .main-menu { 
+	.nav-logo ul, .nav-logo:active ul { 
 
 		display: none;
 		position: absolute;
 		padding: 20px;
 		background: #fff;
+		border: 5px solid #444;
 		right: 20px;
 		top: 60px;
 		width: 50%;
-		
+		border-radius: 4px 0 4px 4px;
 
-	}
-
-	.nav-logo {
-		padding: 29px 0px 14px 20px;
 	}
 
 	.nav-logo li {
@@ -752,10 +967,9 @@ header{
 
 	}
 
-	.nav-logo:hover .main-menu {
+	.nav-logo:hover ul {
 
 		display: block;
 
 	}
-
 /* -=================================================================*/	
